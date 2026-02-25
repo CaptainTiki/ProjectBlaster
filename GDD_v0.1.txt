@@ -1,0 +1,130 @@
+# Hullforge - Game Concept Document
+
+## Overview
+
+**Title:** Hullforge  
+**Genre:** Top-down bullet-hell survival + modular ship-building incremental  
+**Core Fantasy:** Start as a tiny escape pod in a hostile rift-filled space sector. Survive endless waves of corrupted enemies and asteroids by personally piloting and manually building your ship piece-by-piece between waves. Your ship physically grows, changes handling, and becomes a chaotic franken-monster of guns, armor, and exotic modules. Every bullet can rip modules off your hull—making survival tense and rebuilds meaningful.
+
+**Tagline:** Build it. Fly it. Lose it. Rebuild it bigger.
+
+**Inspiration Blend:**
+- Asteroids-style physics & shooting
+- Vampire Survivors incremental power fantasy
+- Space Engineers / From the Depths modular building
+- Touhou / Geometry Wars bullet-hell density in late game
+
+## Core Gameplay Loop
+
+1. **Wave Phase**  
+   - Top-down Asteroids-style controls: thrust, rotate, inertia-based movement.  
+   - You pilot the Core Pod / growing ship.  
+   - Enemies spawn in waves: drone swarms, fighters, corrupted capital ships, asteroid fields.  
+   - They fire dense, patterned bullet-hell attacks.  
+   - Asteroids tumble in; some are corrupted and shoot back.  
+   - Your attached modules fire automatically (PDCs, missiles, etc.).  
+   - You manually aim/fire the Core Cannon (primary weapon) + overcharge specials.  
+   - Enemy bullets & collisions **destroy individual modules** — armor plates shear off, turrets explode, engines go dark.  
+   - Kills drop **Salvage** (instant currency) + **Data Shards** (meta currency).  
+   - Mid-wave Salvage pickups let you hot-buy & attach new modules on the fly (risky but powerful).
+
+2. **Repair / Rebuild Phase** (20–40 seconds after surviving wave)  
+   - Ship floats in a glowing dry-dock view.  
+   - Two options:  
+     a. **Quick Repair** — Spend Scrap/Energy to restore all lost modules to original positions (fast, safe, momentum-preserving).  
+     b. **Manual Rebuild** — Free. Full drag-and-drop: reposition surviving modules, rotate them, attach newly bought ones, experiment with crazy layouts.  
+   - Ship visually updates in real-time — engines glow, armor plates snap on, turrets spin up.
+
+3. **Next Wave** — Bigger, faster, denser bullet patterns, higher HP enemies.
+
+4. **Death** → **Research Bay** (hub)  
+   - Spend Data Shards on permanent progression tree.  
+   - Unlock new module types, global stat buffs, exotic Rifttech.
+
+## Ship Building & Module System
+
+### Starting Piece
+- **Core Pod** — small glowing hub with basic thrust & single forward shot.
+
+### Module Categories & Placement Rules
+- **Nose / Forward** — Heavy armor, railguns, beam emitters (big damage oomph)  
+- **Sides / Flanks** — Point-Defense Cannons (PDC), missile racks, deflectors, shield arcs  
+- **Rear** — Engines (speed & thrust), afterburners, power plants  
+- **Core / Internal** — Batteries, overcharge capacitors, shields, exotic modules (black-hole gens, self-repair nanites)
+
+### Module Examples (early unlocks → late-game exotics)
+1. Basic PDC Turret (auto-fires at small threats)  
+2. Armor Plate (absorbs hits, high HP)  
+3. Rear Ion Engine (increases thrust & top speed)  
+4. Forward Railgun (charged piercing shot)  
+5. Energy Shield Arc (blocks one sector)  
+6. Missile Pod (homing salvo)  
+7. Fractal Mirror Plating (reflects bullets back at enemies)  
+8. Singularity Bomb Bay (deploys mini black holes that suck in projectiles)  
+9. Adaptive Camo Hull (temporarily reduces enemy targeting priority)  
+10. Self-Replicating Drone Bay (spawns friendly auto-targeting drones)
+
+### Physics & Feel Implications
+- More mass (modules) → slower turn rate, higher inertia  
+- Rear engines → faster acceleration & boost  
+- Lost engines → crippled mobility  
+- Lost PDCs → vulnerable flanks become bullet magnets  
+- Balanced builds feel snappy and agile; overbuilt monsters feel like sluggish flying fortresses  
+- Edge case: minimal viable builds (glass cannon speed demons) vs. maximum mass tanks
+
+## Progression & Meta Systems
+
+### In-Run Currency
+- **Salvage** — Dropped on kill, used for mid-wave purchases & rebuilds  
+- **Energy Cores** — Rare drop, used for Quick Repair or high-cost/exotic modules
+
+### Meta Currency
+- **Data Shards** — Earned every run (scales with wave depth & performance), spent in Research Bay
+
+### Research Bay Tree (130+ nodes, four main branches + late-game Rifttech)
+- **Offense** — Gun damage, fire rate, projectile behaviors (split, bounce, chain, homing)  
+- **Defense** — Module HP, repair efficiency, shield strength, auto-repair chance  
+- **Mobility** — Thrust power, turn rate, inertia dampening, emergency boost  
+- **Exotic / Rifttech** — Reality-bending modules (bullet-to-ammo conversion, self-replication, time-slow fields, enemy bullet reflection)
+
+Global upgrades include: Core HP, Salvage per kill multiplier, drop chance buffs, max module slots, starting energy, etc.
+
+## Campaign & Narrative
+
+- **Structure:** 8 Cycles (chapters), each containing 6–8 escalating waves  
+- **Finale:** Cycle 8 ends with a rift-collapse mega-boss that warps the arena and forces mid-fight rebuilds under extreme pressure  
+- **Delivery:** Salvaged **ship logs** (short holo-text snippets) that unlock progressively  
+- **Milestone unlocks:** First shield module, surviving wave 15, maxing an exotic branch, etc.  
+- **Story Arc:** A lone pilot scavenging in a dying convoy discovers the rift is sentient and parasitic—feeding on ships and pilots. Themes of isolation, hubris, survival, and power corruption.  
+- **Endings (4 variants):**  
+  1. Heroic sacrifice — seal the rift at the cost of the ship  
+  2. Void ascension — become the new rift entity  
+  3. Escape vector — flee with forbidden tech  
+  4. Chaos eternal — turn the sector into permanent fractal fireworks
+
+## Late-Game Power Fantasy
+
+- Ship evolves into a 40+ module asymmetric nightmare (one flank a fortress of armor & railguns, the other a bristling missile & PDC death blossom)  
+- Visual chaos: splitting plasma trails, PDC grids vaporizing incoming bullets, black holes devouring formations, screen-shake + bloom overload  
+- Bullet density reaches late Touhou levels, but half the screen becomes your own friendly explosion symphony  
+- Handling choice: twitchy glass-cannon speed demon or lumbering god-machine — entirely player-driven
+
+## Technical & Art Scope Notes
+
+- **Modular assets:** 15–20 base hull pieces (rotate, flip, recolor for variants)  
+- **Destruction:** VFX + “broken/dark” module states  
+- **Background:** Procedural starfield + nebula layers (low effort, high impact)  
+- **Enemies:** 8–10 kitbashable hull types  
+- **Overall:** Very friendly art budget — emphasis on particles, bloom, screen effects, and modular reuse for maximum “whoa” factor
+
+## Why It Stands Out
+
+- You **are** the ship — feel every lost module in your handling, every rebuild in your power  
+- Real risk/reward: one brutal wave can strip you naked; one clever rebuild can break the game  
+- Incremental growth stays hands-on — no auto-pilot; you’re always dodging, shooting, and piloting  
+- Proper finite campaign with narrative payoff + multiple endings (not pure endless mode)  
+- Fresh hybrid feel: Asteroids piloting + Vampire Survivors progression + real modular ship consequences
+
+**Current Development Mood:** Hyped. This feels like the complete package.
+
+Last Updated: Concept iteration – conversation with Pyrat

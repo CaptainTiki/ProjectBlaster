@@ -1,0 +1,63 @@
+# Hullforge - Development Roadmap
+
+No hard deadlines — progress at your own pace. Focus is on building the core fantasy step by step.
+
+## Milestone 0.1 - Core Flight & Combat Loop
+- Basic ship (Core Pod) in a playable level
+- Asteroids-style controls: thrust, rotate, inertia-based movement
+- Manual aiming & firing Core Cannon
+- Simple resource pickup (Salvage orbs from rocks/enemies)
+- Basic asteroids/rocks spawning and colliding
+- At least one enemy type spawning + shooting back
+- **Goal:** Survive a short chaotic minute or two and feel the piloting/shooting loop
+
+## Milestone 0.2 - In-Run Progression & Upgrades
+- Salvage as in-run currency
+- Basic shop/hot-buy system (spend Salvage mid-wave or between waves to attach simple modules)
+- Research Bay / persistent upgrade tree (spend Data Shards on global buffs, new module unlocks)
+- Simple wave structure (survive → short rebuild/upgrade window → next wave)
+
+## Milestone 0.3 - Minimal Ship Builder
+- Drag-and-drop ship builder interface
+- Core Pod + 3–5 basic module types (e.g., PDC turret, armor plate, engine, railgun)
+- Grid snapping, rotation, attach/detach
+- Deploy built ship into gameplay
+- Visual feedback: modules snap on, glow, update ship stats/handling in real-time
+
+## Milestone 0.4 - Menus & UI Basics
+- Title screen
+- Main menu (New Game, Continue, Settings, Quit)
+- Basic settings (volume, controls remap if needed)
+- In-game pause menu
+- HUD showing health, salvage, wave count, etc.
+
+## Milestone 0.5 - Save & Load System
+- Persistent save for Research Bay unlocks / Data Shards
+- Save/load run progress (if we want mid-campaign saves)
+- Basic profile or slot system
+
+## Milestone 0.6 - Story & Narrative Elements
+- Ship log snippets (short text/holo popups on milestones)
+- Basic campaign structure (Cycles/chapters placeholder)
+- Multiple ending stubs (text-only for now)
+
+## Milestone 0.7 - Audio (Music & Sound)
+- Placeholder/main tracks for gameplay, menus, rebuild phase
+- Core sound effects: shooting, explosions, module attach/destroy, pickup, thrust
+
+## Milestone 0.8 - Module Expansion & Polish
+- More module types (shields, missiles, exotics)
+- Destruction VFX/states (broken modules, dark engines)
+- Better enemy variety & bullet patterns
+- Particle & bloom effects for power fantasy
+- Handling tweaks (mass/inertia feel)
+
+## Milestone 0.9 - Bug Fixing & Demo Prep
+- Playtesting & bug hunt
+- Balance pass on waves, salvage economy, module costs
+- Export demo build (web or Windows for sharing)
+
+## Milestone 1.0 - Release Candidate
+- Final polish round
+- Export final build
+- (Optional) itch.io / jam submission prep

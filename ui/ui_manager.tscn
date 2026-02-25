@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://ducy00re1qvwb"]
+
+[ext_resource type="Script" uid="uid://tx7am7h46c5n" path="res://ui/ui_manager.gd" id="1_5tvr0"]
+
+[node name="UI_Manager" type="CanvasLayer" unique_id=1878246407]
+script = ExtResource("1_5tvr0")
+
+[node name="Label" type="Label" parent="." unique_id=398175991]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "UIManager"
