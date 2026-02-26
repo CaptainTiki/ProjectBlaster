@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://oqsguvuv58ba"]
+
+[ext_resource type="Script" uid="uid://bqeqc4gjbht03" path="res://bullets/bullet.gd" id="1_j7btn"]
+[ext_resource type="Texture2D" uid="uid://rtwtv1lxnp01" path="res://assets/bullets/Nebula Shot Levels - Sprite Sheet 32x32.png" id="2_q6sf6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n48es"]
+radius = 8.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ijixh"]
+atlas = ExtResource("2_q6sf6")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qp6h0"]
+atlas = ExtResource("2_q6sf6")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vqc1x"]
+atlas = ExtResource("2_q6sf6")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kh0bi"]
+atlas = ExtResource("2_q6sf6")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7ytlc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ijixh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qp6h0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vqc1x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kh0bi")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="BulletBase" type="Area2D" unique_id=847829135]
+script = ExtResource("1_j7btn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1606875983]
+shape = SubResource("CircleShape2D_n48es")
+
+[node name="Sprite" type="Node2D" parent="." unique_id=1313400651]
+rotation = 1.5707964
+scale = Vector2(2, 2)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Sprite" unique_id=788400316]
+sprite_frames = SubResource("SpriteFrames_7ytlc")
+frame_progress = 0.19508599
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://mp5j7vpiwmki"]
+
+[ext_resource type="Script" uid="uid://buoleupnt5xl8" path="res://system/bullet_pool.gd" id="1_c8nry"]
+
+[node name="BulletPool" type="Node2D" unique_id=2060251096]
+script = ExtResource("1_c8nry")
+
+[node name="BulletParent" type="Node2D" parent="." unique_id=945894201]
