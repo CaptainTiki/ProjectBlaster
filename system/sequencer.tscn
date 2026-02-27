@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dr43fgxvabf05"]
+
+[ext_resource type="Script" uid="uid://dlypwm8f4pdhb" path="res://system/sequencer.gd" id="1_6le74"]
+
+[node name="Sequencer" type="Node2D" unique_id=618165650]
+script = ExtResource("1_6le74")
+
+[node name="EnemyRoot" type="Node2D" parent="." unique_id=1857742217]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1218068333]
+
+[node name="DebugOutput" type="Control" parent="CanvasLayer" unique_id=751564256]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="Label" type="Label" parent="CanvasLayer/DebugOutput" unique_id=24545357]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+text = "ast"

@@ -8,4 +8,4 @@ var player_ship : PlayerShip = null
 func _ready() -> void:
 	player_ship = PLAYER_SHIP.instantiate() as PlayerShip
 	add_child(player_ship)
-	
+	player_ship.set_bullet_pool(%BulletPool)

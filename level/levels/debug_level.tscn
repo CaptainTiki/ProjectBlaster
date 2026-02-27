@@ -5,17 +5,43 @@
 [ext_resource type="PackedScene" uid="uid://mp5j7vpiwmki" path="res://system/bullet_pool.tscn" id="2_tm1ti"]
 [ext_resource type="Texture2D" uid="uid://bds57lcp6fsld" path="res://assets/nebula/nebula03.png" id="3_tm1ti"]
 [ext_resource type="Texture2D" uid="uid://dqf1i21a61dkt" path="res://assets/nebula/nebula07.png" id="4_djoxx"]
+[ext_resource type="PackedScene" uid="uid://dr43fgxvabf05" path="res://system/sequencer.tscn" id="6_djoxx"]
+[ext_resource type="Script" uid="uid://d0472nmemw3jq" path="res://system/sequence.gd" id="7_epluu"]
+[ext_resource type="PackedScene" uid="uid://ce3xkq1c1bakn" path="res://hazards/asteroids/asteroid_large.tscn" id="8_u3met"]
+
+[sub_resource type="Resource" id="Resource_bewke"]
+script = ExtResource("7_epluu")
+location = Vector2(550, -250)
+time = 4.0
+scene = ExtResource("8_u3met")
+metadata/_custom_type_script = "uid://d0472nmemw3jq"
+
+[sub_resource type="Resource" id="Resource_faniw"]
+script = ExtResource("7_epluu")
+location = Vector2(550, 10)
+time = 6.0
+scene = ExtResource("8_u3met")
+metadata/_custom_type_script = "uid://d0472nmemw3jq"
+
+[sub_resource type="Resource" id="Resource_dl21i"]
+script = ExtResource("7_epluu")
+location = Vector2(550, 225)
+time = 11.0
+scene = ExtResource("8_u3met")
+metadata/_custom_type_script = "uid://d0472nmemw3jq"
 
 [node name="DebugLevel" type="Node2D" unique_id=181188099]
 script = ExtResource("1_uccwp")
 
 [node name="BulletPool" parent="." unique_id=2060251096 instance=ExtResource("2_tm1ti")]
+unique_name_in_owner = true
 
 [node name="Environment" type="Node2D" parent="." unique_id=1394528226]
 
 [node name="Camera2D" type="Camera2D" parent="Environment" unique_id=951503663]
 
 [node name="Background" type="Node2D" parent="Environment" unique_id=416438704]
+z_index = -10
 
 [node name="Parallax2D" type="Parallax2D" parent="Environment/Background" unique_id=721410234]
 scroll_scale = Vector2(0.2, 0.2)
@@ -48,3 +74,6 @@ ignore_camera_scroll = true
 [node name="Nebula2" type="Sprite2D" parent="Environment/Background/Parallax2D3" unique_id=1683528174]
 self_modulate = Color(1, 1, 1, 0.16862746)
 texture = ExtResource("4_djoxx")
+
+[node name="Sequencer" parent="." unique_id=618165650 instance=ExtResource("6_djoxx")]
+sequence = Array[ExtResource("7_epluu")]([SubResource("Resource_bewke"), SubResource("Resource_faniw"), SubResource("Resource_dl21i")])

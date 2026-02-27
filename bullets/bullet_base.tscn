@@ -43,6 +43,8 @@ animations = [{
 }]
 
 [node name="BulletBase" type="Area2D" unique_id=847829135]
+collision_layer = 2
+collision_mask = 193
 script = ExtResource("1_j7btn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1606875983]
@@ -54,6 +56,8 @@ scale = Vector2(2, 2)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Sprite" unique_id=788400316]
 sprite_frames = SubResource("SpriteFrames_7ytlc")
+autoplay = "default"
 frame_progress = 0.19508599
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
